@@ -221,21 +221,27 @@ function areaDelTriangulo(base = 10, altura = 4){
 }
 
 
-function deEuroAdolar(euro){
+function deEuroAdolar(euro = 10){
   //Supongamos que 1 euro equivale a 1.20 dólares. Escribe un programa que reciba
   //como parámetro un número de euros y calcule el cambio en dólares.
   //Escribe tu código aquí
-  
+  return  euro * 1.20 ;
 }
 
 
-function esVocal(letra){
+function esVocal(letra = "p"){
   //Escribe una función que reciba una letra y, si es una vocal, muestre el mensaje “Es vocal”. 
   //Verificar si el usuario ingresó un string de más de un carácter, en ese caso, informarle 
   //que no se puede procesar el dato mediante el mensaje "Dato incorrecto".
   // Si no es vocal, tambien debe devolver "Dato incorrecto".
   //Escribe tu código aquí
-  
+  if(letra === "a" || letra === "e" || letra === "i" || letra === "o" || letra === "u" ){
+    return "Es vocal";
+  }else if(letra.length > 1){
+    return "Dato incorrecto";
+  }else{
+    return "Dato incorrecto";
+  }
 }
 
 
